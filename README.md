@@ -18,3 +18,7 @@ Quando precisamos trabalhar com aplicações distribuídas, é fundamental garan
 ### 🟠 `npm install --save-dev nodemon`
 ### 🟠 `npm add dotenv`
 
+### varieveis de ambiente necessarias para a apl
+MONGO_URL  d
+SENDGRID_API_KEY = 
+SENDGRID_EMAIL = 
