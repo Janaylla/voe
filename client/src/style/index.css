@@ -1,0 +1,386 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+  font-family: Roboto, sans-serif;
+ box-sizing: border-box;
+}
+.container-global{
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+}
+.nav{
+  /* padding: 2rem; */
+  box-shadow: 0px 7px 12px 5px rgba(0,0,0,0.10);
+  background-color: #e74c3c;
+  color: white;
+  display: flex;
+  height: 90px;
+  justify-content: start;
+  flex-wrap: nowrap;
+}
+.nav-brand {
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
+  padding: 1rem
+  
+}
+.nav-brand:hover{
+  color: white;
+    font-weight: 900;
+}
+@media (min-width: 768px) {
+  .nav-brand {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 992px) {
+  .nav-brand {
+    font-size: 1.0rem;
+  }
+}
+.seats {
+  font-size: 1.2rem;
+  padding-left: 1.25%;
+  color: #e74c3c;
+  height: 100%;
+
+}
+
+.seats-cta {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  height: 500px;
+}
+
+.looking-for-seats {
+  font-size: 2.5rem;
+  color: white;
+  padding: 1rem;
+
+}
+span.looking-for-seats{
+  font-size: 1rem;
+  padding: 2rem;
+}
+.looking-for-seats-book{
+  font-size: 1.5rem;
+  color: #e74c3c;
+  font-weight: 500;
+  padding: 4rem 1rem 0rem 1rem ;
+}
+.book-table-btn {
+  color: white;
+  font-size: 1.2rem;
+  padding: 2% 8%;
+  border-radius: 25px;
+  background-color: #e74c3c;
+  border: 2px white solid;
+  font-family: ABeeZee, sans-serif;
+}
+.book-table-btn:hover {
+  color: #e74c3c;
+  background-color: white !important;
+  border: 2px solid black !important;
+}
+
+@media (min-width: 768px) {
+  .book-table-btn {
+    font-size: 1.4rem;
+    padding: 0.5% 5%;
+  }
+}
+.big-img-container {
+  padding: 10% 0;
+}
+
+@media (min-width: 768px) {
+  .looking-for-seats-book{
+    font-size: 2.5rem;
+  }
+  .big-img-container {
+    padding: 4% 0;
+  }
+}
+.big-img {
+  width: 90%;
+  height: auto;
+  border-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.seat-reserved{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e74c3c;
+  min-width: 400px;
+  min-height: 100%;
+}
+.selected-table {
+  font-size: 1.25rem;
+  padding-bottom: 2%;
+}
+
+input[type=date]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  display: none;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  -webkit-appearance: none;
+  display: none;
+}
+
+.booking-dropdown {
+  width: 85%;
+  padding: 4% 0;
+  background-color: #e74c3c;
+  color: white;
+  margin: 2% 0;
+  font-family: "Roboto";
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+.booking-dropdown:hover {
+  background-color: #e74c3c;
+  color: white;
+}
+.booking-dropdown:focus {
+  outline: none;
+  box-shadow: none;
+}
+.booking-dropdown-menu {
+  outline: none;
+}
+.booking-dropdown-item:hover {
+  background-color: white;
+}
+.booking-dropdown-item:active {
+  background-color: white;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .booking-dropdown {
+    font-size: 1.2rem;
+  }
+}
+.table-display-message {
+  padding: 2% 0;
+  text-align: center;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.tables-display {
+  background-color: #e74c3c;
+  margin: 10% 2%;
+  padding: 3% 5%;
+  border-radius: 25px;
+}
+
+@media (min-width: 768px) {
+  .tables-display {
+    margin: 6% 2.5%;
+  }
+}
+.table-key {
+  padding-top: 1%;
+  padding-bottom: 4.5%;
+  color: white;
+}
+
+.available-tables {
+  color: white;
+  font-size: 1.2rem;
+  font-family: Roboto, sans-serif;
+}
+
+.table-container {
+  margin: 0 1%;
+}
+
+.table {
+  background-color: rgba(245, 246, 250, 0.4);
+  padding: 15px;
+  border-radius: 25px;
+  min-width: 80px;
+}
+
+.table-row {
+  margin-bottom: 8px;
+}
+
+.selectable-table:hover {
+  cursor: pointer;
+}
+.selectable-table:hover-row {
+  padding: 5px;
+}
+
+.full-table {
+  background-color: white;
+  border: solid 2px white;
+  border-radius: 50%;
+  padding: 1px 10px;
+  margin: 3px;
+}
+
+.empty-table {
+  background-color: #e74c3c;
+  border: solid 2px white;
+  border-radius: 50%;
+  padding: 1px 10px;
+  margin: 3px;
+}
+
+.table-name {
+  color: white;
+  font-size: 0.8rem;
+  padding-top: 15px;
+  font-family: Roboto, sans-serif;
+}
+
+.reservation-details-container {
+  padding: 0 4%;
+  padding-bottom: 5%;
+}
+
+.reservation-details {
+  margin: 0 2%;
+  margin-bottom: 5%;
+}
+
+@media (min-width: 768px) {
+  .reservation-details {
+    margin-bottom: 0;
+  }
+}
+.reservation-input:focus {
+  border-color: black;
+  box-shadow: 0 0;
+}
+
+.reservation-error {
+  color: #c0392b;
+  font-size: 1.1rem;
+  padding-bottom: 3%;
+}
+
+.thanks-header {
+  padding: 5% 0;
+  padding-top: 10%;
+  font-size: 2.5rem;
+}
+
+.thanks-subtext {
+  font-size: 1.2rem;
+  padding: 2%;
+}
+
+.thank-you-seats {
+  font-size: 4rem;
+  color: #e74c3c;
+  padding-bottom: 8%;
+}
+
+@media (min-width: 768px) {
+  .thanks-header {
+    font-size: 5.5rem;
+  }
+
+  .thanks-subtext {
+    font-size: 2.2rem;
+  }
+
+  .thank-you-seats {
+    font-size: 7rem;
+    padding-bottom: 4%;
+  }
+}
+.my-reservations-page{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.my-reservations{
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  max-width: 800px;
+  width: 100%;
+  align-self: center;
+}
+.my-reservations p{
+  margin: 0;
+  padding: 0;
+}
+.table-name-location{
+  display: flex;
+  color: #c0392b;
+  font-size: 1;
+  justify-content: space-between;
+  font-size: 1.3rem;
+}
+.table-day{
+  color: gray;
+  font-size: 0.5;
+  align-self: flex-start;
+}
+.table-name-location-day{
+  display: flex;
+  color: #c0392b;
+  font-size: 1;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 0px 7px 12px 5px rgba(0,0,0, 0.10);
+  
+}
+.my-reservation-table{
+  width: 100%;
+}
+.my-reservation-table-box-reservations{
+  padding: 0.5rem; 
+  width: 100%;
+  text-align: start;
+}
+.my-reservation{
+  margin: 1rem;
+  padding: 0.5rem;
+  color: gray;
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.active{
+  color: green;
+}
+.cancel{
+  color: gray;
+}
+.my-reservation-status{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.my-reservation-status span{
+  color: #c0392b;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=index.css.map */
